@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CryptoWallet</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="nav justify-content-end">
+      <li><%= link_to '[HOME]', root_path, class: "btn btn-primary btn-sm mr-3 mt-2"  %></li>
+      <li><%= link_to "Português", root_path(locale: 'pt-BR'), class: "btn btn-primary btn-sm mr-1 mt-2" %> </li>
+      <li><%= link_to 'English', root_path(locale: 'en'), class: "btn btn-primary btn-sm ml-1 mt-2" %></li>
+    </nav>
+    <%= yield %>
+  </div>
+</body>
+
+</html>
