@@ -9,3 +9,13 @@ JUST a Ruby on Rails webapp for study reasons.
 * squilite3
 
 * Bootstrap
+
+* Yarn
+
+* Docker / docker-compose
+
+# USAGE:
+Run:
+* yarn install
+* docker-compose build .
+* docker-compose up
